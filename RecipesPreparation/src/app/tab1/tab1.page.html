@@ -1,0 +1,217 @@
+<ion-header class="ion-no-border">
+    <div class="img-top">
+        <ion-buttons slot="start">
+            <ion-menu-button menu="main-menu" style="color: #fff;"></ion-menu-button>
+        </ion-buttons>
+    </div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="ion-padding wrapper">
+        <ion-grid class="ion-no-padding">
+            <ion-row class="ion-align-items-baseline">
+                <ion-col size="6">
+                    <h4 class="title">
+                        Danh mục
+                    </h4>
+                </ion-col>
+                <ion-col size="6">
+                    <h4 class="more ion-text-end">
+                        Xem thêm
+                    </h4>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <div class="wr-content">
+        <ion-grid class="ion-no-padding">
+            <ion-row>
+                <ion-col size="12">
+                    <ion-slides [options]="categories">
+
+                        <ion-slide>
+                            <ion-card class="category" (click)="juice()" routerLink="product">
+                                <ion-card-header class="ion-text-center">
+                                    <img src="{{danhmuc_loai1[0]}}" />
+                                    <ion-card-title>{{danhmuc_loai1[1]}}</ion-card-title>
+                                </ion-card-header>
+                            </ion-card>
+                        </ion-slide>
+
+                        <ion-slide>
+                            <ion-card class="category">
+                                <ion-card-header class="ion-text-center">
+                                    <img src="{{danhmuc_loai2[0]}}" />
+                                    <ion-card-title>{{danhmuc_loai2[1]}}</ion-card-title>
+                                </ion-card-header>
+                            </ion-card>
+                        </ion-slide>
+
+                        <ion-slide>
+                            <ion-card class="category">
+                                <ion-card-header class="ion-text-center">
+                                    <img src="{{danhmuc_loai3[0]}}" />
+                                    <ion-card-title>{{danhmuc_loai3[1]}}</ion-card-title>
+                                </ion-card-header>
+                            </ion-card>
+                        </ion-slide>
+
+                        <ion-slide>
+                            <ion-card class="category">
+                                <ion-card-header class="ion-text-center">
+                                    <img src="{{danhmuc_loai4[0]}}" />
+                                    <ion-card-title>{{danhmuc_loai4[1]}}</ion-card-title>
+                                </ion-card-header>
+                            </ion-card>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-card class="category">
+                                <ion-card-header class="ion-text-center">
+                                    <img src="{{danhmuc_loai5[0]}}" />
+                                    <ion-card-title>{{danhmuc_loai5[1]}}</ion-card-title>
+                                </ion-card-header>
+                            </ion-card>
+                        </ion-slide>
+
+                    </ion-slides>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <div class="ion-padding-horizontal wrapper">
+
+        <ion-grid class="ion-no-padding">
+            <ion-row class="ion-align-items-baseline">
+                <ion-col size="6">
+                    <h4 class="title">
+                        Đồ uống nổi bật
+                    </h4>
+                </ion-col>
+                <ion-col size="6">
+                    <h4 class="more ion-text-end">
+                        Xem thêm
+                    </h4>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div class="hightlight">
+        <ion-grid class="ion-no-padding">
+            <ion-slides>
+                <ion-slide>
+                    <div class="ht-product">
+                        <ion-card (click)="recipe()">
+                            <div class="img-heart">
+                                <ion-segment-button value="heart">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </ion-segment-button>
+                                <img src="{{anh[0]}}">
+
+                            </div>
+
+                            <ion-card-header>
+                                <ion-card-subtitle class="font-card-subtitle">{{ten[0]}}
+                                </ion-card-subtitle>
+                                <ion-card-subtitle>
+                                    <ion-icon name="color-fill-outline"></ion-icon>Ng.liệu chính:
+                                    <br> <i>{{nguyenlieuchinh[0]}}
+                                        </i>
+                                </ion-card-subtitle>
+                                <ion-card-subtitle class="font_text-ic">
+                                    <ion-icon name="timer-outline"></ion-icon>{{thoigian[0]}}
+                                    <ion-icon name="flash-outline" style="padding-left: 10px;"></ion-icon>{{mucdo[2]}}
+
+                                </ion-card-subtitle>
+
+                            </ion-card-header>
+                        </ion-card>
+                    </div>
+                    <div class="ht-product">
+                        <ion-card (click)="recipe()">
+                            <div class="img-heart">
+                                <ion-segment-button value="heart">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </ion-segment-button>
+                                <img src="{{anh[1]}}">
+
+                            </div>
+
+                            <ion-card-header>
+                                <ion-card-subtitle class="font-card-subtitle"> {{ten[1]}}
+                                </ion-card-subtitle>
+                                <ion-card-subtitle>
+                                    <ion-icon name="color-fill-outline"></ion-icon>Ng.liệu chính:
+                                    <br><i>{{nguyenlieuchinh[1]}}
+                                    </i>
+                                </ion-card-subtitle>
+                                <ion-card-subtitle class="font_text-ic">
+                                    <ion-icon name="timer-outline"></ion-icon>{{thoigian[1]}}
+                                    <ion-icon name="flash-outline" style="padding-left: 10px;"></ion-icon>{{mucdo[1]}}
+                                </ion-card-subtitle>
+
+                            </ion-card-header>
+                        </ion-card>
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="ht-product">
+                        <ion-card (click)="recipe()">
+                            <div class="img-heart">
+                                <ion-segment-button value="heart">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </ion-segment-button>
+                                <img src="{{anh[8]}}">
+
+                            </div>
+
+                            <ion-card-header>
+                                <ion-card-subtitle class="font-card-subtitle">{{ten[2]}}
+                                </ion-card-subtitle>
+                                <ion-card-subtitle>
+                                    <ion-icon name="color-fill-outline"></ion-icon>Ng.liệu chính:
+                                    <br><i>{{nguyenlieuchinh[2]}}
+                                    </i>
+                                </ion-card-subtitle>
+                                <ion-card-subtitle class="font_text-ic">
+                                    <ion-icon name="timer-outline"></ion-icon>{{thoigian[2]}}
+                                    <ion-icon name="flash-outline" style="padding-left: 10px;"></ion-icon>{{mucdo[1]}}
+
+                                </ion-card-subtitle>
+
+                            </ion-card-header>
+                        </ion-card>
+                    </div>
+                    <div class="ht-product">
+                        <ion-card (click)="recipe()">
+                            <div class="img-heart">
+                                <ion-segment-button value="heart">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </ion-segment-button>
+                                <img src="{{anh[7]}}">
+
+                            </div>
+
+                            <ion-card-header>
+                                <ion-card-subtitle class="font-card-subtitle"> {{ten[3]}}
+                                </ion-card-subtitle>
+                                <ion-card-subtitle>
+                                    <ion-icon name="color-fill-outline"></ion-icon>Ng.liệu chính:
+                                    <br><i>{{nguyenlieuchinh[3]}}
+                                    </i>
+                                </ion-card-subtitle>
+                                <ion-card-subtitle class="font_text-ic">
+                                    <ion-icon name="timer-outline"></ion-icon>{{thoigian[2]}}
+                                    <ion-icon name="flash-outline" style="padding-left: 10px;"></ion-icon>{{mucdo[0]}}
+                                </ion-card-subtitle>
+
+                            </ion-card-header>
+                        </ion-card>
+                    </div>
+                </ion-slide>
+            </ion-slides>
+        </ion-grid>
+    </div>
+</ion-content>

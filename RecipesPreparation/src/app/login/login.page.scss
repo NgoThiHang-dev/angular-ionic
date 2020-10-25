@@ -1,0 +1,100 @@
+// Tiêu đề
+ion-header {
+    margin-top: 10px;
+    text-align: right;
+}
+
+ion-header a {
+    margin-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+
+ion-header a:hover {
+    color: #d71b3b;
+}
+
+//Nội dung
+ion-content {
+    text-align: center;
+    --background: url("../../assets/images/bg_login.jpg") 0 0/100% 100% no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+ion-button {
+    width: 90%;
+    margin: 20px auto;
+    --background: linear-gradient(red, #d71b3b);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+
+h2 {
+    padding-left: 8%;
+    text-align: center;
+    color: #32CD32;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+strong {
+    padding: 80px;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+    color: darkgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a:hover {
+    color: #cc0066;
+}
+
+ion-item {
+    width: 90%;
+    margin: 0px auto;
+}
+
+ion-input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+}
+
+ion-icon {
+    color: #8B4513;
+}
+
+.alert-wrapper {
+    background: #e5e5e5;
+}
+
+.my-custom-class .alert-wrapper {
+    background: #e5e5e5;
+}
+
+.my-custom-class {
+    --background: #e5e5e5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img {
+    // 
+    margin-top: 9%;
+}
+
+.img img {
+    height: 50%;
+    width: 50%;
+}

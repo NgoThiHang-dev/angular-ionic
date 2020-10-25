@@ -1,0 +1,137 @@
+.img-top {
+    background: url('../../assets/images/image1.jpg') 0 0/100% 100% no-repeat;
+    height: 200px;
+}
+
+.more {
+    font-size: 12px;
+    color: #FB4E4E;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+// .border-img {
+//     border: 1px solid #ccc;
+//     border-radius: 50%;
+// }
+// div.wr-content {
+//     ion-card {
+//         width: 150px;
+//     }
+// }
+.category {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 14px;
+    margin-top: -20px;
+    // filter: drop-shadow(0 0 1px rgb(180, 180, 187));
+    // img {
+    //     width: 150px;
+    //     height: 150px;
+    // }
+}
+
+ion-card-header {
+    ion-icon {
+        font-size: 60px;
+    }
+    ion-card-title {
+        font-size: 12px;
+    }
+}
+
+.card {
+    margin: 0;
+    margin-right: 50px;
+    width: 80%;
+    box-shadow: none;
+    border-radius: 14px;
+}
+
+.wrapper {
+    padding-bottom: 0;
+}
+
+.img-wrapper {
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    width: auto;
+    float: left;
+    width: 120px;
+}
+
+.ion-text-left {
+    text-align: center;
+}
+
+ion-card-content {
+    .img-wrapper {
+        border-radius: 14px;
+        overflow: hidden;
+        margin-bottom: 8px;
+    }
+    ion-icon {
+        color: #f2994a;
+        padding-right: 4px;
+    }
+    ion-card-subtitle:last-of-type {
+        padding-top: 6px;
+    }
+}
+
+.ht-product {
+    width: 50%;
+    float: left;
+    margin: 0px auto;
+}
+
+// .ht-product img {
+//     width: 250px;
+//     height: 100px;
+// }
+.ht-product {
+    ion-card-header {
+        ion-icon {
+            font-size: 15px;
+            color: #07921e;
+            margin-right: 7px;
+        }
+        i {
+            color: #23ce3f;
+        }
+        ion-card-title {
+            font-size: 11px;
+        }
+        .font-card-subtitle {
+            font-size: 18px;
+            color: orangered;
+        }
+        .font_text-ic {
+            font-size: 13px;
+            color: gray;
+        }
+    }
+}
+
+.img-heart {
+    ion-segment-button {
+        position: relative;
+    }
+    ion-segment-button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #FB4E4E;
+        margin-right: -15px;
+        margin-top: -5px;
+    }
+    img {
+        width: 170px;
+        height: 90px;
+        min-height: 20px;
+    }
+}

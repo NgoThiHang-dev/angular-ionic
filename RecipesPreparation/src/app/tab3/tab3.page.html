@@ -1,0 +1,70 @@
+<!-- <div class="bia"> -->
+<ion-header [translucent]="true" class="ion-no-border">
+    <div class="bia">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref='/tabs/tab2' style="color: #fff;"></ion-back-button>
+        </ion-buttons>
+    </div>
+
+    <div class="avata">
+        <ion-card>
+            <img src="assets/images/background.jpg" />
+        </ion-card>
+        <div class="bg">
+            <h4>An-Duyên-2Hằng</h4>
+            <h6>Member</h6>
+        </div>
+    </div>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+    <!-- Công thức thực hiện gần đây -->
+    <ion-item href="#">
+        <ion-icon name="list-outline" slot="start"></ion-icon>
+        <ion-label>
+            <p>Công thức thực hiện gần đây</p>
+        </ion-label>
+        <ion-icon style="margin-right: -8px; color: #A4A4A4;" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+
+    <!-- Yêu thích -->
+    <ion-item href="#">
+        <ion-icon name="heart-outline" slot="start"></ion-icon>
+        <ion-label>
+            <p>Yêu thích</p>
+        </ion-label>
+        <ion-icon style="margin-right: -8px; color: #A4A4A4;" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+
+    <!-- Chính sách bảo mật -->
+    <ion-item href="#">
+        <ion-icon name="shield-checkmark-outline" slot="start"></ion-icon>
+        <ion-label>
+            <p>Chính sách bảo mật</p>
+        </ion-label>
+    </ion-item>
+
+    <!-- Đánh giá ứng dụng -->
+    <ion-item href="#">
+        <ion-icon name="star-outline" slot="start"></ion-icon>
+        <ion-label>
+            <p>Đánh giá ứng dụng</p>
+        </ion-label>
+        <ion-icon style="margin-right: -8px; color: #A4A4A4;" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+
+    <!-- Đăng ký khoá học pha chế chuyên nghiệp -->
+    <ion-item href="#">
+        <ion-icon name="fast-food-outline" slot="start"></ion-icon>
+        <ion-label>
+            <p>Đăng ký khoá học pha chế</p>
+        </ion-label>
+    </ion-item>
+
+    <!-- Nút đăng nhập -->
+    <br>
+    <ion-button expand="block" href="./login">Đăng nhập</ion-button>
+    <br>
+</ion-content>

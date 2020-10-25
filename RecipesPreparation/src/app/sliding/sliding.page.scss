@@ -1,0 +1,22 @@
+ion-slides {
+    height: 100%;
+}
+
+.scroll-content1 {
+    background: url('../../assets/images/slide1.jpg') 0 0/100% 100% no-repeat;
+}
+
+.scroll-content2 {
+    background: url('../../assets/images/img-slide2.jpg') 0 0/100% 100% no-repeat;
+    margin: 0px auto;
+}
+
+.start {
+    margin-bottom: -30em;
+    color: #000;
+}
+
+p {
+    font-size: 30px;
+    text-transform: capitalize;
+}

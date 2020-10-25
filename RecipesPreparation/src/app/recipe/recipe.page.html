@@ -1,0 +1,95 @@
+<script type="module" src="../tab1/javascript/ionic.esm.js"></script>
+
+<ion-header>
+    <div class="img-top">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs"></ion-back-button>
+            <ion-title>{{dataReceive.name1}}</ion-title>
+            <ion-icon name="heart-outline"></ion-icon>
+        </ion-buttons>
+    </div>
+</ion-header>
+
+
+<ion-content>
+    <div class="content">
+        <h4 class="title">
+            {{dataReceive.name1}}
+        </h4>
+        <ion-card class="ion-margin-bottom">
+
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="4" class="ion-text-right">
+                        <ion-tab-button tab="schedule">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                            <ion-label>Nguyên liệu</ion-label>
+                            <ion-badge>4</ion-badge>
+                        </ion-tab-button>
+                    </ion-col>
+                    <ion-col size="4" class="ion-text-right">
+                        <ion-tab-button tab="schedule">
+                            <ion-icon name="timer-outline"></ion-icon>
+                            <ion-label>Thời gian</ion-label>
+                            <ion-badge>{{dataReceive.time}}</ion-badge>
+                        </ion-tab-button>
+                    </ion-col>
+                    <ion-col size="4" class="ion-text-right">
+                        <ion-tab-button tab="schedule">
+                            <ion-icon name="flash-outline"></ion-icon>
+                            <ion-label>Độ khó</ion-label>
+                            <ion-badge>{{dataReceive.mucdo}}</ion-badge>
+                        </ion-tab-button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+        </ion-card>
+    </div>
+    <div class="segment">
+        <ion-segment color="success" value="description" [(ngModel)]="selectTabs">
+            <ion-segment-button value="description">
+                <ion-label>Mô tả</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="resources">
+                <ion-label>Nguyên liệu</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="doing">
+                <ion-label>Cách làm</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+    <ion-form class="noidung">
+        <div *ngIf="selectTabs == 'description'">
+            <ion-text>{{dataReceive.mota}} </ion-text>
+
+        </div>
+        <div *ngIf="selectTabs == 'resources'">
+            <!-- <ion-lable>Tên nước uống</ion-lable> -->
+            <ion-text style="margin:6px 0px; "> Nguyên liệu gồm có</ion-text>
+            <br>
+            <div class="nl">
+                <ul>
+                    <li>{{dataReceive.nl0}}</li>
+                    <li>{{dataReceive.nl1}}</li>
+                    <li>{{dataReceive.nl2}}</li>
+                    <li>{{dataReceive.nl3}}</li>
+
+                </ul>
+                <p>{{dataReceive.nl4}}</p>
+            </div>
+
+        </div>
+        <div *ngIf="selectTabs == 'doing'">
+            <!-- <ion-lable>Tên nước uống</ion-lable> -->
+            <!-- <ion-text> Cách làm như sau</ion-text> -->
+            <div class="cl">
+
+                <p><strong>Bước 1: </strong>{{dataReceive.b0}}</p>
+                <p><strong>Bước 2: </strong>{{dataReceive.b1}}</p>
+                <p><strong>Bước 3: </strong>{{dataReceive.b2}}</p>
+            </div>
+
+        </div>
+    </ion-form>
+
+</ion-content>

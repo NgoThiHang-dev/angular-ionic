@@ -1,0 +1,128 @@
+/*========================================HEADER========================================*/
+
+.anhbia {
+    height: 100%;
+}
+
+.anhbia img {
+    width: 100%;
+}
+
+
+/*========================================CONTENT========================================*/
+
+ion-content {
+    text-align: center;
+    --background: linear-gradient(#FFFFFC, #FFFFF0);
+    height: 100%;
+    width: 100%;
+}
+
+.body {
+    margin-top: 58%;
+    width: 100%;
+}
+
+.body h2 {
+    text-align: left;
+    padding-left: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: chocolate;
+    font-size: large;
+}
+
+ion-avatar {
+    height: 80px;
+    width: 110px;
+    --border-radius: 10px;
+    margin-left: -11px;
+    margin-top: 1%;
+    margin-bottom: 1.2%;
+}
+
+ion-avatar img {
+    border-radius: -100%;
+}
+
+ion-card ion-label h3 {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: rgb(190, 6, 6);
+    font-size: 20px;
+}
+
+ion-label ion-icon {
+    color: darkgreen;
+    padding-right: 2px;
+}
+
+ion-card ion-label {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+    font-size: 15px;
+}
+
+ion-card ion-label p {
+    padding-top: 2px;
+    color: #2F4F4F;
+    font-size: medium;
+}
+
+h5 {
+    color: grey;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ion-slide ion-card {
+    width: 50%;
+}
+
+ion-card-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: medium;
+    margin: -10px;
+    color: orangered;
+}
+
+ion-card-content {
+    text-align: left;
+}
+
+ion-card-content ion-icon {
+    color: #07921e;
+    text-align: left;
+    font-size: large;
+}
+
+ion-slide ion-card img {
+    height: 120px;
+    width: 100%;
+}
+
+ion-card-title {
+    font-size: 16px;
+}
+
+.img-heart {
+    ion-segment-button {
+        position: relative;
+    }
+    ion-segment-button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #FB4E4E;
+        margin-right: -15px;
+        margin-top: -5px;
+    }
+    img {
+        width: 170px;
+        height: 90px;
+        min-height: 20px;
+    }
+}

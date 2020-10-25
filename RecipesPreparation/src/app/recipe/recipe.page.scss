@@ -1,0 +1,107 @@
+.img-top {
+    background: url('../../assets/images/image5.jpg') 0 0/100% 100% no-repeat;
+    height: 200px;
+    ion-back-button {
+        color: aliceblue;
+        float: left;
+    }
+    ion-title {
+        // margin-left: -5px;
+        color: aliceblue;
+    }
+    ion-icon {
+        float: right;
+        color: #f6f6f6;
+        margin-right: 10px;
+        font-size: 24px;
+    }
+}
+
+ion-col {
+    padding: 0;
+    margin: 0px auto;
+}
+
+ion-content {
+    --background: #fff;
+}
+
+.content {
+    ion-card {
+        margin: 0px auto;
+        box-shadow: none;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.16);
+        border-radius: 22px;
+        overflow: visible;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 70px;
+        margin-top: -5px;
+    }
+    h4 {
+        margin-left: 20px;
+    }
+}
+
+.ion-margin-bottom {
+    ion-icon {
+        color: rgb(5, 165, 40);
+        font-size: 24px;
+    }
+    ion-badge {
+        background-color: rgb(255, 94, 0);
+        font-size: 11px;
+        margin-top: -5px;
+        margin-left: 5px;
+    }
+}
+
+ion-form .noidung {
+    background-color: #898990;
+    height: 100px;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: inherit;
+    color: #900000;
+}
+
+ion-form ion-lable {
+    font-size: 19px;
+    color: #e7461d;
+    padding-left: 30%;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+ion-form ion-text {
+    font-size: 17px;
+    color: #e27e20;
+    text-align: left;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10px;
+}
+
+.nl {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.nl ul li {
+    margin-left: -8px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nl p {
+    text-align: justify;
+    padding-left: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+}
+
+.cl {
+    width: 90%;
+    margin: 0px auto;
+}

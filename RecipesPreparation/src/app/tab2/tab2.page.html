@@ -1,0 +1,167 @@
+<ion-header class="ion-no-border">
+    <div class="img-top">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs"></ion-back-button>
+            <ion-title></ion-title>
+        </ion-buttons>
+    </div>
+    <div class="search">
+        <ion-searchbar placeholder="Tìm kiếm"></ion-searchbar>
+    </div>
+</ion-header>
+<ion-content>
+    <div class="top_search">
+        <p>Top tìm kiếm</p>
+        <ion-card>
+            <ion-item (click)="recipe()" line="no-line">
+                <ion-avatar slot="start">
+                    <img src="{{anh[2]}}">
+                </ion-avatar>
+                <ion-label>
+                    <h3>{{ten[5]}}</h3>
+
+                    <ion-icon name="timer-outline"></ion-icon>
+                    {{thoigian[2]}}
+                    <ion-icon name="flash-outline" style="padding-left: 15px;"></ion-icon>
+                    {{mucdo[0]}}
+                    <p>{{mota[2]}}</p>
+                </ion-label>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <ion-item (click)="recipe()" line="no-line">
+                <ion-avatar slot="start">
+                    <img src="{{anh[9]}}">
+                </ion-avatar>
+                <ion-label>
+                    <h3>{{ten[10]}}</h3>
+
+                    <ion-icon name="timer-outline"></ion-icon>
+                    {{thoigian[3]}}
+                    <ion-icon name="flash-outline" style="padding-left: 15px;"></ion-icon>
+                    {{mucdo[1]}}
+                    <p>{{mota[9]}}</p>
+                </ion-label>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <ion-item href='drinks' line="no-line">
+                <ion-avatar slot="start">
+                    <img src="{{anh[10]}}">
+                </ion-avatar>
+                <ion-label>
+                    <h3>{{ten[4]}}</h3>
+
+                    <ion-icon name="timer-outline"></ion-icon>
+                    {{thoigian[2]}}
+                    <ion-icon name="flash-outline" style="padding-left: 15px;"></ion-icon>
+                    {{mucdo[1]}}
+                    <p>{{mota[10]}}</p>
+                </ion-label>
+            </ion-item>
+        </ion-card>
+    </div>
+    <div class="hint">
+        <p>Gợi ý hôm nay</p>
+        <ion-grid>
+            <ion-slides>
+                <ion-slide>
+                    <ion-card (click)="recipe()">
+                        <div class="img-heart">
+                            <ion-segment-button value="heart">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </ion-segment-button>
+                            <img src="{{anh[4]}}">
+
+                        </div>
+
+
+
+                        <ion-card-header>
+                            <ion-card-title>{{ten[7]}}
+                            </ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-icon name="timer-outline"></ion-icon>
+                            {{thoigian[3]}}
+                            <br>
+                            <ion-icon name="flash-outline"></ion-icon>
+                            {{mucdo[1]}}
+                        </ion-card-content>
+                    </ion-card>
+                    <ion-card (click)="recipe()">
+
+                        <div class="img-heart">
+                            <ion-segment-button value="heart">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </ion-segment-button>
+                            <img src="{{anh[11]}}">
+
+                        </div>
+
+                        <ion-card-header>
+                            <ion-card-title>{{ten[11]}}
+                            </ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-icon name="timer-outline"></ion-icon>
+                            {{thoigian[3]}}
+                            <br>
+                            <ion-icon name="flash-outline"></ion-icon>
+                            {{mucdo[1]}}
+                        </ion-card-content>
+                    </ion-card>
+                </ion-slide>
+                <ion-slide>
+                    <ion-card (click)="recipe()">
+
+                        <div class="img-heart">
+                            <ion-segment-button value="heart">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </ion-segment-button>
+                            <img src="{{anh[3]}}">
+
+                        </div>
+
+                        <ion-card-header>
+                            <ion-card-title>{{ten[8]}}
+                            </ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-icon name="timer-outline"></ion-icon>
+                            {{thoigian[3]}}
+                            <br>
+                            <ion-icon name="flash-outline"></ion-icon>
+                            {{mucdo[1]}}
+                        </ion-card-content>
+                    </ion-card>
+                    <ion-card (click)="recipe()">
+
+                        <div class="img-heart">
+                            <ion-segment-button value="heart">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </ion-segment-button>
+                            <img src="{{anh[8]}}">
+
+                        </div>
+
+                        <ion-card-header>
+                            <ion-card-title>{{ten[2]}}
+                            </ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-icon name="timer-outline"></ion-icon>
+                            {{thoigian[3]}}
+                            <br>
+                            <ion-icon name="flash-outline"></ion-icon>
+                            {{mucdo[1]}}
+                        </ion-card-content>
+                    </ion-card>
+                </ion-slide>
+
+            </ion-slides>
+        </ion-grid>
+    </div>
+</ion-content>

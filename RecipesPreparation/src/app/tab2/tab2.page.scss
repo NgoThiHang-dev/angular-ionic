@@ -1,0 +1,147 @@
+// ion-content{
+//    background:url('../../assets/images/nen.jpg') 0 0/100% 100% no-repeat;
+//    --opacity: 0.5;
+// }
+ion-header {
+    --height: 200px;
+}
+
+.img-top {
+    background: url('../../assets/images/tea-milk.jpg') 0 0/100% 100% no-repeat;
+    width: 100%;
+    height: 180px;
+}
+
+.search {
+    margin-top: -30px;
+}
+
+.search ion-searchbar {
+    --background: #faf8fa;
+    --border-radius: 25px;
+}
+
+.top_search ion-card {
+    height: 80px;
+    margin-top: 2%;
+    height: 30%;
+    margin-bottom: 2%;
+}
+
+.top_search p {
+    font-family: Verdana, Geneva;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #b86111;
+    font-size: 19px;
+}
+
+//  .top_search img{
+// float:left; 
+// height:100%;
+// width: 100px;
+//  }
+.top_search ion-avatar {
+    height: 80px;
+    width: 110px;
+    --border-radius: 10px;
+    margin-left: -11px;
+    margin-top: 1%;
+    margin-bottom: 1.2%;
+}
+
+.top_search ion-avatar img {
+    border-radius: -90%;
+}
+
+.top_search ion-card ion-label h3 {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #cc326d;
+    font-size: 20px;
+}
+
+.top_search ion-card ion-label {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.top_search ion-card ion-label p {
+    padding-top: 2px;
+    color: #c5bfb3;
+    font-size: small;
+    padding-left: 0%;
+}
+
+.top_search ion-label ion-icon {
+    color: darkgreen;
+    padding-right: 2px;
+}
+
+.hint {
+    margin-top: 2px;
+}
+
+.hint p {
+    font-family: Verdana, Geneva;
+    padding-left: 20px;
+    padding-top: 6px;
+    color: #6c36b3;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.hint ion-slide ion-card {
+    width: 50%;
+}
+
+.hint ion-card-header ion-card-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: medium;
+    margin: -10px;
+    color: orangered;
+}
+
+.hint ion-card-content {
+    text-align: left;
+}
+
+.hint ion-card-content ion-icon {
+    color: #07921e;
+    text-align: left;
+    font-size: large;
+}
+
+.hint ion-card {
+    min-height: 150px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.hint ion-card img {
+    height: 120px;
+    width: 100%;
+}
+
+.img-heart {
+    ion-segment-button {
+        position: relative;
+    }
+    ion-segment-button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #FB4E4E;
+        margin-right: -15px;
+        margin-top: -5px;
+    }
+    img {
+        width: 170px;
+        height: 90px;
+        min-height: 20px;
+    }
+}
